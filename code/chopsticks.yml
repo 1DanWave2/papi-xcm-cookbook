@@ -1,0 +1,21 @@
+# Chopsticks config — chapter 3
+#
+# Start with:
+#   pnpm chopsticks xcm \
+#     --relaychain=paseo \
+#     --parachain=paseo-asset-hub
+#
+# Or with this file:
+#   pnpm chopsticks xcm --config=chopsticks.yml
+
+relaychain:
+  endpoint: wss://paseo-rpc.dwellir.com
+  port: 8000
+  db: ./db.sqlite
+  mock-signature-host: true
+
+parachains:
+  - endpoint: wss://paseo-asset-hub-rpc.dwellir.com
+    port: 8001
+    db: ./db-ah.sqlite
+    mock-signature-host: true

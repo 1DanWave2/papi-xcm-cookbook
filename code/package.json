@@ -1,0 +1,37 @@
+{
+  "name": "papi-xcm-cookbook",
+  "version": "0.1.0",
+  "description": "Runnable XCM examples on Paseo using Polkadot-API (PAPI). Companion repo to the PAPI XCM Cookbook.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "papi": "papi",
+    "teleport": "tsx examples/teleport.ts",
+    "replay": "tsx examples/replay-teleport.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "polkadot",
+    "papi",
+    "polkadot-api",
+    "xcm",
+    "paseo",
+    "tutorial"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot-api/descriptors": "file:.papi/descriptors",
+    "@polkadot-labs/hdkd": "^0.0.10",
+    "@polkadot-labs/hdkd-helpers": "^0.0.10",
+    "polkadot-api": "^1.7.0",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

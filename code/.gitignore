@@ -1,0 +1,8 @@
+node_modules/
+.papi/
+db.sqlite
+db-ah.sqlite
+*.log
+.DS_Store
+.env
+dist/
